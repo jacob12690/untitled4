@@ -45,6 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+<<<<<<< HEAD
         title: Text(widget.title),
       ),
       body: Center(
@@ -67,11 +68,31 @@ class _MyHomePageState extends State<MyHomePage> {
       items: const <BottomNavigationBarItem>[
         BottomNavigationBarItem(
           icon: Icon(Icons.home),
+=======
+        title: Text('可達'),
+        centerTitle: true,
+      ),
+      body: Container(
+        child: Image.network(
+            'https://image1.gamme.com.tw/news2/2022/76/44/qZqVpJ_Wk5_cqqQ.jpg'
+        ),
+      ),
+
+    ///////////////////下方切換紐//////////////////////
+    bottomNavigationBar: BottomNavigationBar(
+      items: const <BottomNavigationBarItem>[
+        BottomNavigationBarItem(
+          icon: Icon(Icons.event_outlined),
+>>>>>>> 418ff74 (Initial commit)
           label: '月曆',
           tooltip: '',
         ),
         BottomNavigationBarItem(
+<<<<<<< HEAD
           icon: Icon(Icons.home),
+=======
+          icon: Icon(Icons.home_outlined),
+>>>>>>> 418ff74 (Initial commit)
           label: '主頁',
           tooltip: '',
         ),
@@ -87,13 +108,35 @@ class _MyHomePageState extends State<MyHomePage> {
         child: ListView(
           children: const <Widget>[
             ListTile(
+<<<<<<< HEAD
               leading: Icon(Icons.access_alarm),
               title: Text('Alarm'),
+=======
+              leading: Icon(Icons.perm_identity_outlined),
+              title: Text('user'),
+            ),
+            ListTile(
+              leading: Icon(Icons.perm_contact_calendar_outlined),
+              title: Text('ａ'),
+            ),
+            ListTile(
+              leading: Icon(Icons.currency_exchange_outlined),
+              title: Text('ｂ'),
+            ),
+            ListTile(
+              leading: Icon(Icons.sensors_outlined),
+              title: Text('ｃ'),
+>>>>>>> 418ff74 (Initial commit)
             ),
           ],
         ),
       ),
+<<<<<<< HEAD
       ///////////////////////////////////////////
+=======
+      ////////////////////////////////////////////////
+
+>>>>>>> 418ff74 (Initial commit)
     );
 
   }

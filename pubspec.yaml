@@ -55,9 +55,19 @@ flutter:
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
+<<<<<<< HEAD
   # the material Icons class.
   uses-material-design: true
 
+=======
+  # the material s class.
+  uses-material-design: true
+
+  assets:
+    - assets/
+
+
+>>>>>>> 418ff74 (Initial commit)
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
