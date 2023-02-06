@@ -12,10 +12,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.yellow,
       ),
       home: const MyHomePage(title: '今日照片'),
+
     );
   }
 }
@@ -72,13 +72,23 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text('可達'),
         centerTitle: true,
       ),
+
       body: Container(
+        margin: EdgeInsets.only(left: 80, top: 10, right: 80),
+        alignment: Alignment.center,
+        height: 300,
+        width:300,
+        decoration: new BoxDecoration(//背景
+          color: Colors.grey, //设置四周圆角 角度
+          borderRadius: BorderRadius.all(Radius.circular(10.0)),
+          border: new Border.all(width: 1, color: Colors.grey),
+        ),
         child: Image.network(
-            'https://image1.gamme.com.tw/news2/2022/76/44/qZqVpJ_Wk5_cqqQ.jpg'
+          'https://image1.gamme.com.tw/news2/2022/76/44/qZqVpJ_Wk5_cqqQ.jpg',
         ),
       ),
 
-    ///////////////////下方切換紐//////////////////////
+      ///////////////////下方切換紐//////////////////////
     bottomNavigationBar: BottomNavigationBar(
       items: const <BottomNavigationBarItem>[
         BottomNavigationBarItem(
@@ -138,6 +148,5 @@ class _MyHomePageState extends State<MyHomePage> {
 
 >>>>>>> 418ff74 (Initial commit)
     );
-
   }
 }
