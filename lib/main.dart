@@ -45,30 +45,6 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-<<<<<<< HEAD
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-
-          ],
-        ),
-      ),
-    ///////////////////下方切換紐//////////////////////////
-    bottomNavigationBar: BottomNavigationBar(
-      items: const <BottomNavigationBarItem>[
-        BottomNavigationBarItem(
-          icon: Icon(Icons.home),
-=======
         title: Text('可達'),
         centerTitle: true,
       ),
@@ -93,16 +69,11 @@ class _MyHomePageState extends State<MyHomePage> {
       items: const <BottomNavigationBarItem>[
         BottomNavigationBarItem(
           icon: Icon(Icons.event_outlined),
->>>>>>> 418ff74 (Initial commit)
           label: '月曆',
           tooltip: '',
         ),
         BottomNavigationBarItem(
-<<<<<<< HEAD
-          icon: Icon(Icons.home),
-=======
           icon: Icon(Icons.home_outlined),
->>>>>>> 418ff74 (Initial commit)
           label: '主頁',
           tooltip: '',
         ),
@@ -118,10 +89,6 @@ class _MyHomePageState extends State<MyHomePage> {
         child: ListView(
           children: const <Widget>[
             ListTile(
-<<<<<<< HEAD
-              leading: Icon(Icons.access_alarm),
-              title: Text('Alarm'),
-=======
               leading: Icon(Icons.perm_identity_outlined),
               title: Text('user'),
             ),
@@ -136,17 +103,12 @@ class _MyHomePageState extends State<MyHomePage> {
             ListTile(
               leading: Icon(Icons.sensors_outlined),
               title: Text('ｃ'),
->>>>>>> 418ff74 (Initial commit)
             ),
           ],
         ),
       ),
-<<<<<<< HEAD
-      ///////////////////////////////////////////
-=======
       ////////////////////////////////////////////////
 
->>>>>>> 418ff74 (Initial commit)
     );
   }
 }
